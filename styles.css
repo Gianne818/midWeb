@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+ html {
+   background-image: linear-gradient(to bottom, #F2EFE7, #b7e6eb);
+   height: 100vh;
+ }
+ 
+ body {
+   display: grid;
+   grid-template-columns: 1fr, 2fr;
+   grid-template-rows: 1fr, 3fr, 3fr, 3fr, 3fr ;
+   margin: 10px;
+   font-family: "PT Sans", Sans-Serif;
+   color: #2a3738;
+   border: 2px solid #2d3e40;
+   border-radius: 5px;
+ }
+ 
+
+ 
+ h1,  h2 {
+   margin: 10px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: 400;
+   color:#2d3e40;
+ }
+ 
+ h1 {
+   grid-column: 1/span 2;
+   grid-row: 1;
+   border: 2px solid #2d3e40;
+   border-radius: 5px;
+ }
+ 
+
+ table {
+  border: 2px solid #2d3e40;
+  background-color: #9ACBD0;
+  border-radius: 5px;
+}
+
+th {
+  background-color: #F2EFE7;
+  border: 2px solid #2d3e40;
+  border-radius: 5px;
+}
+
+tr, td {
+  border: 2px solid #2d3e40;
+  background-color: #48A6A7;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.myself {
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  padding: 10px;
+  grid-row: 2;
+  border: 2px solid #2d3e40;
+  border-radius: 5px;
+  
+}
+
+.educ {
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  padding: 10px;
+  grid-row: 2;
+  border: 2px solid #2d3e40;
+  border-radius: 5px;
+}
+
+.bscs {
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  padding: 10px;
+  grid-row: 3;
+  grid-column: span 2;
+  border: 2px solid #2d3e40;
+  border-radius: 5px;
+}
+
+
+.influential {
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  padding: 10px;
+  grid-row: 4;
+  grid-column: 1 / span 2;
+  border: 2px solid #2d3e40;
+  border-radius: 5px;
+}
+
+.fav {
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  padding: 10px;
+  grid-row: 5;
+  grid-column: 1 / span 2;
+  border: 2px solid #2d3e40;
+  border-radius: 5px;
+}
+
+ @media (max-width: 600px) {
+   body { 
+     grid-template-rows: auto;
+   }
+   .myself { grid-column:1/span 2; }
+   .educ {  grid-row: 4; grid-column:1/span 2;}
+   .bscs { grid-row: 3; grid-column: 1/span 2; }
+   .influential { grid-row: 5; grid-column:1/span 2;}
+   .fav { grid-row: 6; grid-column:1/span 2;}
+ }
