@@ -115,7 +115,7 @@ tr, td {
   border-radius: 5px;
 }
 
- @media (max-width: 600px) {
+ @media (max-width: 480px) {
    body { 
      grid-template-rows: auto;
    }
